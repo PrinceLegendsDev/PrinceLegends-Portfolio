@@ -9,25 +9,6 @@
     border-radius: 50%;
     object-fit: cover;
 }
-
-.btn {
-    min-width: 160px;
-    padding:var( --btn-padding-x);
-    height:var(--btn-height-md);
-    background-color: black;
-    color: green;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-.btn:hover{
-    transform:translateY(-5px);
-    box-shadow:
-    0 0 10px green,
-    0 0 20px green,
-    0 0 40px rgba(0,255,0,0.5);
-}
-
 .card {
     background:var(---color-highlight);
     padding:var(--space-4);

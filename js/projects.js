@@ -20,9 +20,9 @@ export const projects = [
             "JavaScript"
         ],
 
-        github: "#",
+        github: "https://github.com/PrinceLegendsDev/PrinceLegends-Portfolio",
 
-        demo:"#"
+        demo:"https://princelegendsdev.github.io/PrinceLegends-Portfolio/"
     },
 
      {
