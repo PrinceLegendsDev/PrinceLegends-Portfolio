@@ -4,7 +4,7 @@ export const projects = [
     {
         title: "School Management System",
 
-        image: "assets/TECHNOVA.png",
+        image: "assets/school.jpg",
 
         description: "A Responsive System Designed To Manage School Operations",
 
@@ -28,7 +28,7 @@ export const projects = [
      {
         title: "Weather Application",
 
-        image: "assets/p-pic.jpg",
+        image: "assets/weather.jpg",
 
         description:
         "A weather application using API integration.",
