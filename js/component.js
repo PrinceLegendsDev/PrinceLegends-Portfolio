@@ -13,11 +13,25 @@ export async function loadComponent(id, file) {
 }
 export function themeSwitch() {
 
-    const themeBtn = document.querySelector(".theme-btn");
     const body = document.body;
+
+    const themeBtn = document.querySelector(".theme-btn");
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if(savedTheme === "light") {
+        body.classList.add("theme");
+    }
 
     themeBtn.addEventListener("click", () => {
 
         body.classList.toggle("theme");
-    })
+
+        if(body.classList.contains("theme")) {
+            localStorage.setItem("theme", "light");
+        } else {
+            localStorage.setItem("theme", "dark");
+        }
+
+    });
 }
