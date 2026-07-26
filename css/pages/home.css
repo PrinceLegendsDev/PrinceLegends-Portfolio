@@ -1,8 +1,4 @@
-/*body {
-    font-family:var( --font-primary);
-    background:var(---color-body-light);
-    color: #0F172A;
-}*/
+
 .nav-menu {
     position: fixed;
     top: 0;
@@ -142,4 +138,9 @@
 body {
     background-color:var(---color-body-dark) ;
     color: white;
+}
+.theme {
+    font-family:var( --font-primary);
+    background:var(---color-body-light);
+    color: #0F172A;
 }

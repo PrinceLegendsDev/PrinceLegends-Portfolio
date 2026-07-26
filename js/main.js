@@ -1,6 +1,7 @@
 import { loadComponent } from "./component.js";
 import { setNavigation } from "./navigation.js";
 import { displayProject } from "./project-render.js"
+import { themeSwitch } from "./component.js"
 
 
 async function startApp(){
@@ -10,6 +11,7 @@ async function startApp(){
         "components/nav.html"
     );
 
+    themeSwitch()
 
     await loadComponent(
         "#footer",
