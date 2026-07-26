@@ -11,3 +11,13 @@ export async function loadComponent(id, file) {
     element.innerHTML = html;
 
 }
+export function themeSwitch() {
+
+    const themeBtn = document.querySelector(".theme-btn");
+    const body = document.body;
+
+    themeBtn.addEventListener("click", () => {
+
+        body.classList.toggle("theme");
+    })
+}
