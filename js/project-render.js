@@ -73,12 +73,12 @@ export function displayProject() {
 
         <div class="project-actions">
 
-         <a href="${project.github}" target="_blank">
-                   GitHub
+         <a href="${project.gitHubLink}" target="_blank">
+                   View Code
          </a>
 
-        <a href="${project.demo}" target="_blank">
-              Live Demo
+        <a href="${project.liveCodeLink}" target="_blank">
+              View Live
          </a>
 
         </div>

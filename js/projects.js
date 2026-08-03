@@ -2,11 +2,11 @@
 export const projects = [
 
     {
-        title: "School Management System",
+        title: "Good Vibes Resturant Ordering System",
 
-        image: "assets/school.jpg",
+        image: "assets/image.png",
 
-        description: "A Responsive System Designed To Manage School Operations",
+        description: "A full frontend restaurant ordering application that allows customers to browse menus, add items to a cart, manage orders, and submit enquiries through WhatsApp.",
 
         features: [
             "Responsive",
@@ -17,12 +17,12 @@ export const projects = [
         technologies: [
             "HTML",
             "CSS",
-            "JavaScript"
+            "JavaScript ES6",
         ],
 
-        github: "https://github.com/PrinceLegendsDev/PrinceLegends-Portfolio",
+        gitHubLink: "https://github.com/princelegendsdev/restaurant-website",
 
-        demo:"https://princelegendsdev.github.io/PrinceLegends-Portfolio/"
+        liveCodeLink:"https://princelegendsdev.github.io/restaurant-website/"
     },
 
      {
