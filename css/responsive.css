@@ -24,6 +24,12 @@
         align-items:center;
         justify-content:space-between;
     }
+    .hero-role {
+        font-size: var(--space-8);
+    }
+    .hero-title {
+         font-size: var(--space-10);
+    }
     .menu-btn{
         display:none;
     }
@@ -105,5 +111,16 @@
     .hero-description {
         text-align: center;
         padding: 1rem;
+        font-size: var(--space-5);
     }
+    .section-tag {
+        font-size: var(--space-10);
+    }
+    #about-header {
+        font-size: var(--space-8);
+        font-family: var(--font-code);
+    }
+    .theme-btn {
+    background-color: none;
+}
 }

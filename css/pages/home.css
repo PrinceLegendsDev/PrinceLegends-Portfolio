@@ -142,6 +142,12 @@ body {
 }
 .theme {
     font-family:var( --font-primary);
-    background:var(---color-body-light);
+    background: grey;
     color: #0F172A;
+}
+.theme-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: var(--space-6);
 }
