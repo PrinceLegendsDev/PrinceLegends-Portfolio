@@ -138,6 +138,7 @@
 body {
     background-color:var(---color-body-dark) ;
     color: white;
+    transition: .3s;
 }
 .theme {
     font-family:var( --font-primary);
