@@ -1,12 +1,12 @@
 
-.container{
+/* =================================
+   CONTAINER
+================================= */
 
-    width:100%;
+.container {
+    width: 100%;
+    max-width: var(--container-width);
 
-    max-width:var(--container-width);
-
-    margin-inline:auto;
-
-    padding-inline:var(--container-padding-mobile);
-
+    margin-inline: auto;
+    padding-inline: var(--container-padding-mobile);
 }

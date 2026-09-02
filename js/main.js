@@ -1,7 +1,7 @@
 import { loadComponent } from "./component.js";
 import { setNavigation } from "./navigation.js";
-import { displayProject } from "./project-render.js"
-import { themeSwitch } from "./component.js"
+import { displayProjects } from "./project-render.js"
+import { themeSwitch, setupContactForm } from "./component.js"
 
 
 async function startApp(){
@@ -21,7 +21,9 @@ async function startApp(){
 
     setNavigation();
 
-    displayProject()
+    displayProjects();
+
+    setupContactForm();
 
 }
 

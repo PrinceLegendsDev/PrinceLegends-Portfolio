@@ -35,3 +35,40 @@ export function themeSwitch() {
 
     });
 }
+
+export function setupContactForm() {
+
+    const form = document.querySelector("#form");
+
+    if (!form) return;
+
+    form.addEventListener("submit", (event) => {
+
+        event.preventDefault();
+
+        const name = document.querySelector("#name").value.trim();
+        const email = document.querySelector("#email").value.trim();
+        const subject = document.querySelector("#subject").value.trim();
+        const message = document.querySelector("#message").value.trim();
+
+        const whatsappMessage = `
+Hello TECH LEGENDS,
+
+I came across your portfolio and would like to discuss a project.
+
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+
+Message:
+${message}
+        `.trim();
+
+        const phoneNumber = "260775544529";
+
+        const whatsappURL =
+            `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.open(whatsappURL, "_blank");
+    });
+}

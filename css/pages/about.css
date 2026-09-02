@@ -1,64 +1,160 @@
+/* =================================
+   ABOUT PAGE
+================================= */
+
+
+/* =================================
+   ABOUT IMAGE
+================================= */
+
 .about-img {
     display: flex;
     justify-content: center;
 }
+
 .about-img img {
     width: 100%;
     max-width: 300px;
     aspect-ratio: 1;
+
     border-radius: 50%;
     object-fit: cover;
-}
-.card {
-    background:var(---color-highlight);
-    padding:var(--space-4);
-    border-radius:var(--space-5);
+
+    border: 3px solid var(--color-accent2);
+
+    box-shadow:
+        0 0 15px var(--color-accent2),
+        0 0 30px rgba(124, 58, 237, 0.4);
 }
 
-.footer{
-    padding:var(--space-4);
-}
-.footer-cont{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    gap:1.5rem;
-}
-.footer-brand p{
-    margin-top:.5rem;
-}
-.footer-social{
-    display:flex;
-    gap:1rem;
-}
-.copyright{
-    font-size:.875rem;
-}
+
+/* =================================
+   ABOUT CONTENT
+================================= */
+
 .about-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:var(--space-6);
-    padding:var(--space-4);
+
+    gap: var(--space-6);
+    padding: var(--space-2);
+
+    text-align: center;
 }
+
+
+/* =================================
+   SECTION TAG
+================================= */
+
 .section-tag {
-    color: #7C3AED;
-    font-size:var(--fs-md);
+    color: var(--color-accent2);
+    font-size: var(--fs-md);
+    font-family: var(--font-code);
+    font-weight: var(--fw-semibold);
 }
+
+
+/* =================================
+   ABOUT HEADER
+================================= */
+
 #about-header {
-    font-size:var(--space-6);
-    color:var( ---color-accent);
+    font-family: var(--font-heading);
+    font-size: var(--fs-2xl);
+    color: var(--color-accent);
+    line-height: var(--lh-tight);
 }
+
+
+/* =================================
+   ABOUT TEXT
+================================= */
+
 .about-text {
-    font-size:var(--space-5);
+    color: var(--color-body-light);
+    font-size: var(--fs-md);
+    line-height: var(--lh-relaxed);
+    max-width: 700px;
 }
+
+
+/* =================================
+   ABOUT SKILLS
+================================= */
 
 .about-skills {
     display: flex;
     flex-direction: column;
-    gap:var(--space-3);
-    font-family:var(--font-code);
-    color:var(white);
-    box-shadow:var(--shadow-md);
+
+    gap: var(--space-3);
+
+    width: 100%;
+
+    font-family: var(--font-code);
+}
+
+
+/* =================================
+   SKILL CARDS
+================================= */
+
+.card {
+    background-color: var(--color-nav-bg);
+
+    padding: var(--space-4);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+
+    border-left: 3px solid var(--color-accent2);
+}
+
+.card h3 {
+    color: var(--color-sub);
+
+    font-family: var(--font-heading);
+    font-size: var(--fs-md);
+
+    margin-bottom: var(--space-2);
+}
+
+.card p {
+    color: var(--color-body-light);
+
+    font-family: var(--font-primary);
+    font-size: var(--fs-sm);
+    line-height: var(--lh-normal);
+}
+
+
+/* =================================
+   ABOUT BUTTON
+================================= */
+
+.about-content .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: var(--btn-height-md);
+    padding-inline: var(--btn-padding-x);
+
+    background-color: var(--color-accent2);
+    color: var(--color-body-light);
+
+    border-radius: var(--btn-radius);
+
+    font-weight: var(--btn-font-weight);
+
+    transition:
+        transform var(--transition-fast),
+        background-color var(--transition-fast);
+}
+
+.about-content .btn:hover {
+    background-color: var(--color-accent);
+    transform: translateY(-2px);
 }
