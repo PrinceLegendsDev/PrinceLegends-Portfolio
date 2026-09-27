@@ -96,7 +96,7 @@ export const projects = [
     {
     title: "TECH Legends",
 
-    image: "assets/tech-legends.jpg",
+    image: "assets/tech-legends.png",
 
     description:
     "A technology solutions brand focused on building practical websites, web applications, inventory systems, and business automation solutions.",
