@@ -94,30 +94,32 @@ export const projects = [
 
 
     {
-        title: "Weather Application",
+    title: "TECH Legends",
 
-        image: "assets/weather.jpg",
+    image: "assets/tech-legends.jpg",
 
-        description:
-        "A weather application demonstrating API integration and dynamic weather data.",
+    description:
+    "A technology solutions brand focused on building practical websites, web applications, inventory systems, and business automation solutions.",
 
-        features: [
-            "API Integration",
-            "Real Time Data",
-            "Responsive"
-        ],
+    features: [
+        "Business Websites",
+        "Web Applications",
+        "Business Automation"
+    ],
 
-        technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript"
-        ],
+    technologies: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js",
+        "Express.js"
+    ],
 
-        gitHubLink:
-        "#",
+    gitHubLink:
+    "https://github.com/PrinceLegendsDev",
 
-        liveCodeLink:
-        "#"
-    }
+    liveCodeLink:
+    "https://tech-legends.onrender.com/index.html"
+}
 
 ];
