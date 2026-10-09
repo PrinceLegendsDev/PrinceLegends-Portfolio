@@ -134,3 +134,263 @@
     background-color: var(--color-accent);
     transform: translateY(-2px);
 }
+.tech-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.tech-images img {
+    width: 45%;
+}
+
+
+/* ==========================================
+   TECHNOLOGY ORBIT
+========================================== */
+
+.animation-box {
+    position: relative;
+    width: min(100%, 460px);
+    aspect-ratio: 1;
+    margin: 40px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(37, 99, 235, 0.20),
+            rgba(10, 10, 25, 0.96) 65%
+        );
+
+    border: 1px solid rgba(96, 165, 250, 0.18);
+
+    box-shadow:
+        0 0 50px rgba(37, 99, 235, 0.12),
+        inset 0 0 40px rgba(96, 165, 250, 0.06);
+}
+
+/* Orbit rings */
+
+.orbit {
+    position: absolute;
+    width: 72%;
+    height: 72%;
+
+    border: 1px solid rgba(96, 165, 250, 0.30);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.orbit-one {
+    animation: orbit-spin 18s linear infinite;
+}
+
+.orbit-two {
+    width: 92%;
+    height: 92%;
+
+    border-style: dashed;
+    border-color: rgba(168, 85, 247, 0.25);
+
+    animation: orbit-spin 30s linear infinite reverse;
+}
+
+/* Technology badges */
+
+.animation {
+    position: absolute;
+    inset: 0;
+}
+
+.tech {
+    position: absolute;
+
+    padding: 12px 18px;
+    border-radius: 12px;
+
+    color: #eaf2ff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    background: rgba(15, 23, 42, 0.90);
+    border: 1px solid rgba(96, 165, 250, 0.35);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25),
+        0 0 18px rgba(59, 130, 246, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    animation: tech-float 4s ease-in-out infinite;
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tech:hover {
+    background: rgba(37, 99, 235, 0.25);
+    border-color: #60a5fa;
+
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.30);
+}
+
+/* Individual badge positions */
+
+.tech-html {
+    top: 17%;
+    left: 17%;
+    animation-delay: 0s;
+}
+
+.tech-css {
+    top: 12%;
+    right: 17%;
+    animation-delay: 0.5s;
+}
+
+.tech-js {
+    top: 43%;
+    right: 5%;
+    animation-delay: 1s;
+}
+
+.tech-node {
+    bottom: 17%;
+    right: 15%;
+    animation-delay: 1.5s;
+}
+
+.tech-express {
+    bottom: 13%;
+    left: 16%;
+    animation-delay: 2s;
+}
+
+.tech-postgres {
+    top: 45%;
+    left: 4%;
+    animation-delay: 2.5s;
+}
+
+/* Center logo */
+
+.orbit-center {
+    position: relative;
+    z-index: 2;
+
+    width: 115px;
+    height: 115px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        145deg,
+        #172554,
+        #111827
+    );
+
+    border: 1px solid rgba(96, 165, 250, 0.5);
+
+    box-shadow:
+        0 0 30px rgba(59, 130, 246, 0.22),
+        inset 0 0 20px rgba(96, 165, 250, 0.08);
+
+    animation: center-pulse 4s ease-in-out infinite;
+}
+
+.orbit-center span {
+    color: #60a5fa;
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.orbit-center small {
+    color: #cbd5e1;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+/* Animations */
+
+@keyframes orbit-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes tech-float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes center-pulse {
+    0%, 100% {
+        box-shadow: 0 0 25px rgba(59, 130, 246, 0.15);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(59, 130, 246, 0.35);
+    }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .orbit,
+    .tech,
+    .orbit-center {
+        animation: none;
+    }
+}
+
+/* Responsive design */
+
+@media (max-width: 480px) {
+    .animation-box {
+        width: min(100%, 340px);
+        margin: 25px auto;
+    }
+
+    .tech {
+        padding: 9px 11px;
+        font-size: 11px;
+        border-radius: 9px;
+    }
+
+    .orbit-center {
+        width: 90px;
+        height: 90px;
+    }
+
+    .orbit-center span {
+        font-size: 27px;
+    }
+
+    .orbit-center small {
+        font-size: 7px;
+    }
+}
