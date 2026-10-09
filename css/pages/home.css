@@ -325,8 +325,9 @@
     letter-spacing: 2px;
 }
 
-/* Animations */
-
+/*=================================
+     ANIMATION BLOCK 
+================================ */
 @keyframes orbit-spin {
     from {
         transform: rotate(0deg);
@@ -355,6 +356,10 @@
     50% {
         box-shadow: 0 0 40px rgba(59, 130, 246, 0.35);
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* Accessibility */
