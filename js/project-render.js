@@ -1,4 +1,5 @@
 import { projects } from "./projects.js";
+import { industry } from "./industry.js";
 
 
 export function displayProjects() {
@@ -78,6 +79,46 @@ export function displayProjects() {
 
 
         container.appendChild(card);
+
+    });
+
+}
+
+
+export function displayIndustry () {
+
+    const industryBox = document.querySelector(".industry-box");
+
+    if(!industryBox) return;
+
+    industryBox.innerHTML = "";
+
+    industry.forEach(industry => {
+
+        const box = document.createElement("article");
+        box.classList.add("industry-wrapper");
+
+        box.innerHTML =`
+        <div class="industry-image">
+
+          <img src="${industry.image}" 
+          alt="${industry.name}">
+
+        </div>
+        
+        <div class="industry-description">
+    
+        <h2>${industry.name}</h2>
+        <p>${industry.description}</p>
+
+        <a href="${industry.link}" target="_blank">
+        talk to us
+        </a>
+
+        </div>
+        `;
+
+        industryBox.appendChild(box);
 
     });
 

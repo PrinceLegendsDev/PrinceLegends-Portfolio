@@ -1,6 +1,6 @@
 import { loadComponent } from "./component.js";
 import { setNavigation } from "./navigation.js";
-import { displayProjects } from "./project-render.js"
+import { displayProjects, displayIndustry } from "./project-render.js"
 import { themeSwitch, setupContactForm } from "./component.js"
 
 
@@ -24,6 +24,8 @@ async function startApp(){
     displayProjects();
 
     setupContactForm();
+
+    displayIndustry();
 
 }
 
