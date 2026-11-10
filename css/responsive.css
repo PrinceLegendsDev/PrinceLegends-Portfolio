@@ -19,7 +19,7 @@
     .industry-intro h1 {
         text-align: center;
         font-family: var(--font-heading);
-        color: var(--color-sub);
+        color: var(--color-accent2);
     }
     .industry-description h2 {
         color: var(--color-body-light);
@@ -242,6 +242,7 @@
     display: flex;
     justify-content: center;
     padding: var(--space-6);
+    color: var(--color-accent2);
 }
 .industry-image {
     width: 100%;
